@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('*', (req, res) => {
-  res.send('The tutrial on ussd')
+  res.send('There it is')
 })
 
 app.post("*", (req, res) => {
@@ -25,6 +25,9 @@ app.post("*", (req, res) => {
     
     let response = `Your phone number is ${phoneNumber}`
     res.send(response)
+
+
+    
 
   }else if(text =='1*1')
   {
